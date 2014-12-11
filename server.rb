@@ -8,7 +8,7 @@ set :bind, '0.0.0.0' # This is needed for Vagrant
 
 
 get '/' do
-  @message = "Hello World"
+  @message = "Hello World".size
   @remarks = ["I am", "A Group Of", "Messages", "Make Sure", "You Check", "The ERB tags"]
   erb :index
 end
